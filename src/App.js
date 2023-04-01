@@ -8,7 +8,7 @@ import { Formemp } from './components/form/Formemp';
 function App() {
   return (
     <div>
-     <BrowserRouter>
+     <BrowserRouter basename='/EmployeeAppFrontend'>
      <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/form' element={<Formemp/>}/>

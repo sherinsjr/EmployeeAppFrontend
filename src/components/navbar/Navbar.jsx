@@ -1,13 +1,13 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+
 
 export const Navbar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-primary navbar-dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
-            Employee
-          </a>
+          <Link to="/"  style={{textDecoration:"none",color:"black"}}>Empolyee</Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -22,14 +22,10 @@ export const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ">
               <li className="nav-item ">
-                <a className="nav-link active  " aria-current="page" href="/">
-                  Home
-                </a>
+              <Link to="/"  style={{textDecoration:"none",color:"white"}}>Home</Link>
               </li>
               <li className="nav-item ">
-                <a className="nav-link active " href="/form">
-                  Add Employee
-                </a>
+              <Link to="/form"  style={{textDecoration:"none",color:"black"}}>Add Empolyee</Link>
               </li>
             </ul>
           </div>
